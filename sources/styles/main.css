@@ -75,10 +75,12 @@ header svg {
   display: inline-block;
   padding: 10px 35px;
   text-decoration: none;
-  color:#0f0f0f;
+  color:#0b0b0b;
   font-size: 18px;
   border: none;
-  background: #f99434;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
   text-transform: uppercase;
   border-radius: 5px;
   font-weight: 620;
@@ -88,7 +90,7 @@ header svg {
 
 .btn-main:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 10px rgba(249, 148, 5, 0.5);
+  box-shadow: 0 5px 10px #232526;
 }
 
 main {
@@ -142,14 +144,34 @@ main {
   border: none;
 }
 
-.collection-presentation,
-.duckmaster-presentation {
+.tool-presentation {
   padding: 2em;
   color:#d9d9d9;
 }
 
-.collection-presentation h2,
-.duckmaster-presentation h2 {
+.tool-presentation h2 {
+  color:rgba(236, 204, 142, 100%)
+}
+
+hr {
+  margin: 20px 0;
+  padding: 0;
+  height: 10px;
+  border: none;
+  border-top: 1px solid #e9e9e9;
+  box-shadow: 0 10px 10px -10px #d3d3d3 inset;
+}
+
+.tool-presentation-2 {
+  padding: 2em;
+  color:#d9d9d9;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: end;
+}
+
+.tool-presentation-2 h2 {
   color:rgba(236, 204, 142, 100%)
 }
 

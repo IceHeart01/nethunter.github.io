@@ -1,0 +1,37 @@
+.btn-fn {
+  display: inline-block;
+  padding: 10px 35px;
+  text-decoration: none;
+  color: #0b0b0b;
+  font-size: 18px;
+  border: none;
+  background: linear-gradient(90deg, #7e00ff 0%, #ff008c 100%);
+  background: -webkit-linear-gradient(
+    to right,
+    #7e00ff,
+    #ff008c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7e00ff,
+    #ff008c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 620;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.09s ease-out;
+}
+.btn-fn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px #5100a1;
+}
+
+.questions {
+  background: #0f0f0f;
+  text-align: center;
+}
+
+.questions h2 {
+  color: rgba(253, 242, 172, 100%);
+}
