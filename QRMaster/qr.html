@@ -1,1 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Official site of a software developer for information security specialists.">
+        <title>NETHUNTER | QRGen</title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="../sources/files/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="../sources/files/icon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="../sources/files/icon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link href="../sources/styles/bootstrap/bootstrap.min.css" rel="stylesheet" />
+        <link href="../sources/styles/qr.css" rel="stylesheet" />
+      </head>
+<body>
+    <div class="wrapper">
+        <header>
+          <nav
+          class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img
+                src="../sources/files/logo.svg"
+                alt="Logo"
+                width="50"
+                height="50"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="../index.html#products">Products</a>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="../datahunter.html" target="_blank">DATAHUNTER <svg
+                        xmlns="../sources/files/eye.svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-eye"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+                        />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+                        />
+                      </svg></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item disabled" href="#" data-bs-toggle="modal">Media Search <svg xmlns="sources/files/webcam.svg" width="16" height="16" fill="currentColor" class="bi bi-webcam" viewBox="0 0 16 16">
+                        <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H9.269c.144.162.33.324.531.475a6.785 6.785 0 0 0 .907.57l.014.006.003.002A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.224-.947l.003-.002.014-.007a4.473 4.473 0 0 0 .268-.148 6.75 6.75 0 0 0 .639-.421c.2-.15.387-.313.531-.475H2a2 2 0 0 1-2-2V6Zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2Z"/>
+                        <path d="M8 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm7 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                      </svg></a>
+                    </li>
+                    <li><a class="dropdown-item" href="../fast_numbers.html" data-bs-toggle="modal">Fast Numbers <svg xmlns="sources/files/person-check-fill.svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                      <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg></a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item disabled" href="#" data-bs-toggle="modal"
+                        >Education
+                        <svg
+                          xmlns="sources/files/patch_check.svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-patch-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                          />
+                          <path
+                            d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"
+                          /></svg></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Tools
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../duckmaster.html" target="_blank">DuckMaster <svg xmlns="sources/files/usb-symbol.svg" width="16" height="16" fill="currentColor" class="bi bi-usb-symbol" viewBox="0 0 16 16">
+                      <path d="m7.792.312-1.533 2.3A.25.25 0 0 0 6.467 3H7.5v7.319a2.5 2.5 0 0 0-.515-.298L5.909 9.56A1.5 1.5 0 0 1 5 8.18v-.266a1.5 1.5 0 1 0-1 0v.266a2.5 2.5 0 0 0 1.515 2.298l1.076.461a1.5 1.5 0 0 1 .888 1.129 2.001 2.001 0 1 0 1.021-.006v-.902a1.5 1.5 0 0 1 .756-1.303l1.484-.848A2.5 2.5 0 0 0 11.995 7h.755a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25h.741a1.5 1.5 0 0 1-.747 1.142L8.76 8.99a2.584 2.584 0 0 0-.26.17V3h1.033a.25.25 0 0 0 .208-.389L8.208.312a.25.25 0 0 0-.416 0Z"/>
+                    </svg></a></li>
+                    <li><a class="dropdown-item" href="../QRMaster/qr.html">QRMaster <svg xmlns="sources/files/qr-code.svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+                      <path d="M2 2h2v2H2V2Z"/>
+                      <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+                      <path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+                      <path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+                      <path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+                    </svg></a></li>
+                    <li>
+                      <a class="dropdown-item" href="../generator.html" target="_blank"
+                        >PassGen <svg xmlns="../sources/files/shield-lock.svg" width="16" height="16" fill="currentColor" class="bi bi-shield-lock" viewBox="0 0 16 16">
+                          <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                          <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
+                        </svg></a
+                      >
+                      <li><a class="dropdown-item" href="../siphers.html" target="_blank">Ciphers <svg xmlns="sources/files/input-cursor.svg" width="16" height="16" fill="currentColor" class="bi bi-input-cursor" viewBox="0 0 16 16">
+                        <path d="M10 5h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4v1h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-4v1zM6 5V4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v-1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4z"/>
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13A.5.5 0 0 1 8 1z"/>
+                      </svg></a></li>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blogs
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://t.me/nethunter_channel" target="_blank">NETHUNTER <svg xmlns="sources/files/telegram.svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                    </svg></a></li>
+                    <li>
+                      <a class="dropdown-item" href="http://t.me/tactical_toolkit" target="_blank"
+                        >Tactical ToolKit <svg xmlns="sources/files/telegram.svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                        </svg></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Contacts
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="http://t.me/iceheart_01" target="_blank">Admin <svg xmlns="sources/files/telegram.svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                      </svg></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="http://t.me/nethunter_feedback_bot" target="_blank">Support <svg xmlns="sources/files/telegram.svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                      </svg></a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+        </nav>
+        </header>
+        <main class="pt-5">
+            <h2 class="mt-5">QRMaster</h2>
+            <p>You can create codes with any text content. It can be a link or executable code.</p>
+            <form>
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" id="usertext" name="usertext" placeholder="Enter text" required aria-label="Recipient's username" aria-describedby="button-addon2">
+                  </div>
+                  <button class="btn btn-dark" type="button" id="button-addon2" onclick="generateQRCode()">Generate</button>
+                <div id="qrcode-container">
+                  <div id="qrcode" class="qrcode mt-4"></div>
+                </div>
+              </form>
 
+              <h4 class="mt-5">QR pic</h4>
+              <p>You can create codes with images.</p>
+              <div class="qart">
+                <div class="input-group">
+                  <input id="value" type="text" class="form-control" placeholder="Enter text" value="">
+                  </input>
+                  <div class="input-group">
+                    <input id="size" type="number" class="form-control mt-4" placeholder="Image size" value="">
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input id="bg" type="text" class="form-control mt-4" placeholder="Color in HEX" value="">
+                </div>
+                <select class="form-select mt-4" aria-label="Default select example" id='fillType' name="fillType">
+                  <option>scale_to_fit</option>
+                  <option>fill</option>
+                </select>
+                <div class="input-group mb-3">
+                  <input type="file" id="file" class="form-control mt-4">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="threshold" name="filter" id="flexRadioDefault1" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Threshold
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="color" name="filter" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Color
+                  </label>
+                </div>
+                  <div class="group">
+                    <div id="qr"></div>
+                    <div id="image"><img src="" width="800" class="mt-4"></div>
+                </div>
+                <div class="group">
+                    <div id="combine"></div>
+                </div>
+              </div>
+        </main>
+        <footer>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-lg-4 col-md-12">
+                  <div class="category mt-2">
+                    <h6>Social:</h6>
+                      <a href="http://t.me/nethunter_channel" target="_blank">Telegram</a>
+                      <a href="http://t.me/tactical_toolkit" target="_blank">Telegram for TTK</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                  <div class="category mt-2">
+                    <h6>Contacts:</h6>
+                    <a href="http://t.me/iceheart_01" target="_blank">Admin</a>
+                    <a href="http://t.me/nethunter_feedback_bot" target="_blank">Support</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                  <p class="mt-2">&copy; Copyright 2023</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>
+    <script src="../sources/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../sources/js/qrcode.min.js"></script>
+    <script src="../sources/js/qrgen.js"></script>
+
+    <script src="../src/qrcode.js"></script>
+    <script src="../dist/qart.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          var value = 'https://github.com/kciter/qart.js';
+          var filter = 'threshold';
+          var imagePath = './example.png';
+          var version = 10;
+          var imageSize = 75 + (version * 12) - 24;
+          var bg = "#C2C";
+          var size = "175";
+          var fillType = 'scale_to_fit';
+
+          var self = this;
+
+          $('#image img').width(imageSize);
+
+          function makeQR() {
+              // console.log('Current version:', version)
+              qrcode.qrcode.stringToBytes = qrcode.qrcode.stringToBytesFuncs['UTF-8']
+              var qr = qrcode.qrcode(version, 'H');
+              qr.addData(value);
+              try {
+                qr.make();
+
+              } catch (err) {
+                console.log('Version is low:', version)
+                console.log('Error:', err)
+              }
+              document.getElementById('qr').innerHTML = qr.createImgTag(3);
+          }
+
+          function makeQArt() {
+              new QArt({
+                  value: value,
+                  imagePath: imagePath,
+                  filter: filter,
+                  version: version,
+                  background: bg,
+                  size: size,
+                  fillType: fillType
+              }).make(document.getElementById('combine'));
+          }
+
+          function getBase64(file, callback) {
+              var reader = new FileReader();
+              reader.readAsDataURL(file);
+              reader.onload = function () {
+                  callback(reader.result);
+              };
+          }
+
+          $('#value').keyup(function() {
+              value = $(this).val();
+              makeQR();
+              makeQArt();
+          });
+
+          $('#bg').keyup(function() {
+              bg = $(this).val();
+              makeQArt();
+          });
+
+          $('#size').keyup(function() {
+              size = $(this).val();
+              makeQArt();
+          });
+
+          $('#fillType').bind('change',function() {
+              fillType = $(this).val();
+              makeQArt();
+          });
+
+
+          $('#version').bind('keyup change click', function() {
+              console.log($('#version').val());
+              version = $('#version').val();
+              imageSize = 75 + (version * 12) - 24;
+              $('#image img').width(imageSize);
+              makeQR();
+              makeQArt();
+          });
+
+          $('#file').change(function() {
+              getBase64(this.files[0], function(base64Img) {
+                  var regex = /data:(.*);base64,(.*)/gm;
+                  var parts = regex.exec(base64Img);
+                  imagePath = parts[0];
+                  $('#image img').attr('src', imagePath);
+                  makeQArt();
+              });
+          });
+
+          $('input[type=radio]').click(function() {
+              filter = $(this).val();
+              makeQArt();
+          });
+
+          makeQR();
+          makeQArt();
+      });
+  </script>
+</body>
+</html>
